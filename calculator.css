@@ -1,0 +1,29 @@
+body
+{
+    background-color: bisque;
+    font-family:'Courier New', Courier, monospace;
+}
+input
+{
+    background-color:thistle;
+    width: 320px;
+    height: 40px;
+    text-align:center;
+    font-weight: bold;
+}
+td,button
+{
+    width: 50px;
+}
+#arithmetic
+{
+    background-color:aqua;
+}
+#numbers
+{
+    background-color:aquamarine;
+}
+#special
+{
+    background-color:rgb(245, 83, 83);
+}
