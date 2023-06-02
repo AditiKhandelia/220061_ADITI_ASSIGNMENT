@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="calculator.css">
+        <meta charset="UTF-8">
+    </head>
+    <title>
+        SCIENTIFIC CALCULATOR
+    </title>
+    <body>
+        <table>
+            <tr>
+                <input type="text" id="user_input" readonly>
+            </tr>
+            <tr>
+                <td><button id="numbers" onclick="change_input('1')">1</button></td>
+                <td><button id="numbers" onclick="change_input('2')">2</button></td>
+                <td><button id="numbers" onclick="change_input('3')">3</button></td>
+                <td><button id="arithmetic" onclick="change_input('+')">+</button></td>
+                <td><button id="special" onclick="change_input('Math.sin(')">sin</button></td>
+                <td><button id="special" onclick="change_input('1/Math.cos(')">sec</button></td>
+            </tr>
+            <tr>
+                <td><button id="numbers" onclick="change_input('4')">4</button></td>
+                <td><button id="numbers" onclick="change_input('5')">5</button></td>
+                <td><button id="numbers" onclick="change_input('6')">6</button></td>
+                <td><button id="arithmetic" onclick="change_input('-')">-</button></td>
+                <td><button id="special" onclick="change_input('Math.cos(')">cos</button></td>
+                <td><button id="special" onclick="change_input('1/Math.sin(')">cosec</button></td>
+            </tr>
+            <tr>
+                <td><button id="numbers" onclick="change_input('7')">7</button></td>
+                <td><button id="numbers" onclick="change_input('8')">8</button></td>
+                <td><button id="numbers" onclick="change_input('9')">9</button></td>
+                <td><button id="arithmetic" onclick="change_input('*')">x</button></td>
+                <td><button id="special" onclick="change_input('Math.tan(')">tan</button></td>
+                <td><button id="special" onclick="change_input('Math.exp(')">exp</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="change_input('(')">(</button></td>
+                <td><button id="numbers" onclick="change_input('0')">0</button></td>
+                <td><button onclick="change_input(')')">)</button></td>
+                <td><button id="arithmetic" onclick="change_input('/')">/</button></td>
+                <td><button id="special" onclick="change_input('1/Math.tan(')">cot</button></td>
+                <td><button id="special" onclick="change_input('Math.ln(')">ln</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="clear_display()">AC</button></td>
+                <td><button onclick="change_input('.')">.</button></td>
+                <td><button onclick="result_display()">=</button></td>
+                <td><button id="special" onclick="change_input('Math.sqrt(')">sqrt</button></td>
+                <td><button id="special" onclick="change_input('Math.cbrt(')">cbrt</button></td>
+                <td><button id="special" onclick="change_input('Math.PI')">PI</button></td>
+            </tr>
+        </table>
+    </body>
+    <script src="calculator.js"></script>
+
+</html>
+
